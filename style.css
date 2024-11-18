@@ -13,6 +13,10 @@
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   list-style: none;
+  border: none;
+}
+
+body {
   background-color: var(--black);
 }
 
@@ -20,9 +24,14 @@
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 70px;
   z-index: 100000;
+}
+
+#logo {
+  color: var(--white);
+  font-family: "Bruno Ace SC", serif;
 }
 #menu {
   display: flex;
@@ -32,6 +41,7 @@
   display: block;
   padding: 0.5rem;
   color: var(--white);
+  font-size: 12px;
 }
 #btn-mobile {
   display: none;
@@ -62,6 +72,8 @@
     margin: 0 2rem;
     border-bottom: 2px solid var(--black);
     font-size: 14px;
+    display: flex;
+    justify-content: center;
   }
   #btn-mobile {
     display: flex;
@@ -69,7 +81,6 @@
     border: none;
     cursor: pointer;
     background: none;
-    background-color: var(--red);
     width: 34px;
     height: 34px;
     border-radius: 5px;
@@ -103,4 +114,41 @@
     transform: rotate(-135deg);
     top: -7px;
   }
+}
+
+#home h1 {
+  color: var(--white);
+  text-align: center;
+  padding-top: 50px;
+}
+
+#img-central {
+  width: 520px;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+}
+
+#btn1 {
+  width: 180px;
+  height: 50px;
+  background-color: var(--orange);
+  border-radius: 6px;
+}
+
+#btn1 a {
+  color: var(--white);
+  font-weight: 600;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button img {
+  width: 320px;
+  z-index: -100;
 }
