@@ -122,6 +122,12 @@ body {
   padding-top: 50px;
 }
 
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #img-central {
   width: 520px;
   margin: auto;
@@ -130,16 +136,27 @@ body {
   display: flex;
 }
 
-#btn1 {
-  width: 180px;
+.btn1 {
+  /* width: 180px;
   height: 50px;
   background-color: var(--orange);
-  border-radius: 6px;
+  border-radius: 6px; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--orange);
+  color: white;
+  border: none;
+  padding: 13px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-#btn1 a {
+.btn1 a {
   color: var(--white);
-  font-weight: 600;
 }
 
 .button {
@@ -151,4 +168,107 @@ body {
 .button img {
   width: 320px;
   z-index: -100;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  width: 480px;
+  display: block;
+}
+
+.about img {
+  width: 300px;
+}
+
+.about div h1 {
+  color: var(--white);
+}
+
+.about div p {
+  color: var(--white);
+  max-width: 500px;
+  font-size: 12px;
+}
+
+.about {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.texts-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.card {
+  width: 400px;
+  background-color: #383636;
+  border: solid 2px #bc3f00;
+  border-radius: 4px;
+  display: flex;
+  padding: 25px;
+}
+
+.card img {
+  width: 130px;
+  height: 130px;
+}
+
+.cards-texts {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cards-texts h3 {
+  font-size: 16px;
+}
+
+.cards-texts p {
+  font-size: 12px;
+}
+
+.container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 25px;
+}
+
+.btn-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+
+.btn-footer img {
+  width: 380px;
+  margin-top: 50px;
+}
+
+#btn1 {
+  width: 180px;
+  height: 50px;
+  border: solid 2px var(--orange);
+  background-color: transparent;
+  border-radius: 4px;
+  margin-bottom: 50px;
+}
+
+#btn1 a {
+  color: var(--white);
+  font-weight: 600;
 }
